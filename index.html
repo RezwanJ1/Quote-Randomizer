@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            
+            padding: 0;
+            margin: 0;
+        }
+        
+        main {
+            width: 100%;
+            height: 100vh;
+            background-color: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .Holder {
+
+            width: 50%;
+            height: 50vh;
+            background-color: darkgoldenrod;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 1%;
+            text-align: center;
+            border: thick solid rgb(116, 96, 73);
+        }
+        
+        .Stuff {
+
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .otherStuff {
+
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            flex-direction: row;
+        }
+
+        .QUOTE{
+
+            width: 97.5%;
+            height: 80%;
+            background-color:moccasin;
+            text-align: center;
+            text-decoration: underline tan;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            
+            padding: 1%;
+        }
+        
+        .RANDOMBTN,
+        .SEEALLBTN {
+
+            width: 49%;
+            height: 100%;
+            background-color: rgb(207, 185, 127);
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+        }
+
+         .RANDOMBTN:hover,
+        .SEEALLBTN:hover {
+
+            border: thick solid rgb(116, 96, 73);
+            color: white;
+            background-color: rgb(138, 123, 86);
+        }
+
+
+
+
+        .QUOTEBOX {
+
+            width: 75%;
+            height: 75%;
+            background-color: rgb(207, 185, 127);
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            padding: 1%;
+        }
+
+        .SUBMITBTN {
+
+            width: 20%;
+            height: 100%;
+            background-color: rgb(207, 185, 127);
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+        }
+        
+        .QUOTEBOX:hover {
+
+            color: white;
+            border: thick solid rgb(116, 96, 73);
+            background-color: rgb(138, 123, 86);
+        }
+
+        .SUBMITBTN:hover {
+
+            background-color: rgb(138, 123, 86);
+            color: white;
+            border: thick solid rgb(116, 96, 73);
+        }
+
+        .ALLQUOTES {
+            width: 60%;
+            height: 90%;
+            background-color: darkgoldenrod;
+            border: thick solid rgb(116, 96, 73);
+            list-style-type: none;
+            z-index: 99;
+            position: absolute;
+            overflow-y: auto;
+            display: none;
+        }
+        .CLOSEBTN {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            border-radius: 100%;
+            border: thick solid rgb(87, 0, 0);
+            font-size: xx-large;
+            color:white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            right: 0;
+            position: absolute;
+        }
+
+        .CLOSEBTN:hover {
+            background-color: rgb(87, 0, 0);
+            border: thick solid red;
+        }
+
+        .AQUOTE {
+          width: 50%;
+          height: 10%;
+          background-color: burlywood;
+          margin-top: 1%;
+          margin-left: 1%;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 1.5em;
+        }
+
+
+
+
+
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+     <main>
+    <div class="Holder">
+        <aside class="otherStuff">
+
+            <button class="RANDOMBTN">Random 🎲</button>
+            <button class="SEEALLBTN">See All 📃</button>
+        </aside>
+
+        <div class="Stuff">
+
+            <h2 class="QUOTE"></h2>
+        </div>
+
+          <aside class="otherStuff">
+
+                <input type="text" placeholder="New Quote here" class="QUOTEBOX" >
+                <button class="SUBMITBTN" >Submit</button>
+        </aside>
+
+    </div>
+
+    <ul class="ALLQUOTES">
+        <button class="CLOSEBTN"><b>X</b></button>
+    </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
